@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Anne Ingrid Tangen Webdocumentary</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Webdocumentary about Norwegian Musician">
+    <meta name="keywords" content="Web documentary, Music, Norway, Denmark, Alternative Rock, Storytelling">
+    <meta name="author" content="Aron, Daniel, Lukas, Marija">    
+         
+</head> 
+
+<body>
+   
+     <header>
+         
+<div class="nav-java">
+            $("nav").find("a").click (e) ->
+    e.preventDefault()
+    section = $(this).attr "href"
+    $("html, body").animate
+        scrollTop: $(section).offset().top   
+</div>
+
+         <nav class="shift">
+<ul>
+    <li><a href="#section1">INSPIRATION</a></li>
+    <li><a href="#section2">PROGRESS</a></li>
+    <li><a href="#section3">ALTER EGOS</a></li>
+    <li><a href="#section4">WHAT PEOPLE DON'T KNOW</a></li>
+</ul>
+         </nav>
+
+         
+         
+<script src="https://unpkg.com/scrollreveal@4"></script>
+  <script>
+       window.sr = ScrollReveal({
+           
+       }
+       )
+       </script>
+        
+    </header>
+    
+<div class="content">
+    
+    <br/>
+    <br/>
+    <br/>
+    
+    
+<video width="100%" controls>
+  <source src="video/webdocfinal.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+    
+<section id="section1">
+   <img src="images/flower-blue-art-drawing.jpg" class="first-left" alt="Blue Flower Art Painting">
+    <img src="images/anne-kiaer-nature.PNG" class="first-right" alt="Anne Ingrid in Nature">
+    
+     <h1 class="first-heading">INSPIRATION</h1>    
+        <p class="first-paragraph">The inspiration for songwriting kind of develops naturally for me. My greatest inspiration comes when I take walks in nature. The lyrics just spontaneously come to me so I quickly write them down in phone or book. At first it’s only random bits and pieces. Then I gather them, start structuring it, create a melody around the lyrics, with  piano and loop station. </p>
+</section>
+
+<div class="audio">
+    <p class="song">Sidemannen</p>
+<audio controls>
+    <source src="audio/first.mp3" type="audio/mpeg">
+</audio>
+    </div>
+    
+    <div class="audio1">
+        <p class="song">Denne mannen er alene</p>
+<audio controls>
+    <source src="audio/second.mp3" type="audio/mpeg">
+</audio>
+    </div>
+    
+    <div class="audio2">
+        <p class="song">Poesi</p>
+<audio controls>
+    <source src="audio/third.mp3" type="audio/mpeg">
+</audio>
+    </div>
+    
+
+<section id="section2">
+    
+    <img src="images/writing-songs-notes.jpg" class="second-left" alt="Woman Writing Notes Songs">
+    <img src="images/lights.jpg" class="second-right" alt= "Lights Inspiration Motivation Music">
+
+    
+    <h1 class="second-heading">PROGRESS</h1>
+        <p class="second-paragraph">I started playing piano when I was 9 years old. Also, I was in a quire, performed in musicals and eventually started performing.  After highschool I started feeling inspired to write my own songs, instead of performing other people’s pieces. That’s when my creativity really kicked in.</p>
+        <p class="second-paragraph-part-two">I remember some of my earlier songs being pretty bad, to say the least. It’s funny to remember them now. I am happy to see that my skills developed over the years and I can say I’m pretty satisfied with how the quality of my songs progressed.</p>
+
+</section>
+
+<section id="section3">
+
+    <img src="images/wall-difference-split.jpg" class="third-left" alt="Alter Egos Personality Stage">
+    <img src="images/anne-kiaer-performance.jpeg" class="third-right" alt="Woman Singing Anne Ingrid">
+    
+    <h1 class="third-heading">ALTER EGOS</h1>
+        <p class="third-paragraph">I love creating the kind of music I like listening to, which is why I have both jazz and alternative pop-rock projects at the moment. And because they are so different from each other it’s almost like I have different alter egos on which band I am performing with.</p>
+    
+</section>
+
+    
+<section id="section4">
+    
+    <img src="images/anne-kiaer-concert.jpeg" class="fourth-left" alt="Woman Singer on Concert Anne Ingrid" width="500" height="600">
+    <img src="images/colorful-backround.jpg" class="fourth-right" alt="Art Painting Color" width="500" height="600">
+    
+    <h1 class="fourth-heading">WHAT PEOPLE DON'T KNOW</h1>
+        <p class="fourth-paragraph">We have to spend a lot of time doing the business part of their career as well. not just be creative. To be honest, it can be pretty exhausting. I’m still learning that and trying to get into sending a lot of emails, making label deals, booking venues etc. But eventually it all pays off because the best part is when I get on the stage and just play with a band. Sharing a moment with them and the crowd is always an amazing feeling.</p>
+
+</section>
+        
+    
+
+            
+<footer>
+<ul>
+    <li><a href="#section1">INSPIRATION</a></li> <br/>
+    <li><a href="#section2">PROGRESS</a></li><br/>
+    <li><a href="#section3">ALTER EGOS</a></li><br/>
+    <li><a href="#section4">WHAT PEOPLE DON'T KNOW</a></li><br/>
+</ul>
+    
+<p>Copyright: All songs belong to Anne Ingrid Tangen</p>
+</footer>
+    
+    <div class="square">
+    </div>
+         
+            </div>
+    
+        <script>
+            sr.reveal('#section1 .first-right, .first-left',{
+    origin: 'right',
+    distance: '50px',
+    duration: 1000,
+    easing: 'ease',
+    mobile: false,
+    reset: true,
+    viewFactor: 0.4,
+            });
+        
+        sr.reveal('#section2 .second-left, .second-right',{
+    origin: 'left',
+    distance: '50px',
+    duration: 1000,
+    easing: 'ease',
+    mobile: false,
+    reset: true,
+    viewFactor: 0.4,
+        });
+        
+                sr.reveal('#section3 .third-right, .third-left',{
+    origin: 'top',
+    distance: '50px',
+    duration: 1000,
+    easing: 'ease',
+    mobile: false,
+    reset: true,
+    viewFactor: 0.3,
+            });
+        
+        sr.reveal('#section4 .fourth-left, .fourth-right',{
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    easing: 'ease',
+    mobile: false,
+    reset: true,
+    viewFactor: 0.3,
+        });
+            </script>
+            
+    </body>
+    
+  
+    
+    </html>
